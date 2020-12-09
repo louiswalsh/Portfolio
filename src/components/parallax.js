@@ -1,8 +1,9 @@
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
 import React from "react";
 import TransitionTitle from './transition_title'
+import SpringTitle from './spring_title'
 
-// const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 
 class PortfolioParallax extends React.Component {
@@ -21,9 +22,6 @@ class PortfolioParallax extends React.Component {
               style={{ background: "linear-gradient(#1E3D59, #F5F0E1)" }}
              />
 
-             <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#F5F0E1' }} />
-             <ParallaxLayer offset={1.5} speed={1} style={{ backgroundColor: '#F5F0E1' }} />
-             <ParallaxLayer offset={1.5} speed={0} style={{ backgroundColor: '#F5F0E1' }} />
              <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#F5F0E1' }} />
 
              <ParallaxLayer
@@ -33,13 +31,10 @@ class PortfolioParallax extends React.Component {
              />
 
 
-             <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#FF6E40' }} />
-             <ParallaxLayer offset={2.5} speed={1} style={{ backgroundColor: '#FF6E40' }} />
-             <ParallaxLayer offset={2.5} speed={0} style={{ backgroundColor: '#FF6E40' }} />
              <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: '#FF6E40' }} />
 
 
-             {/* <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} /> */}
+             <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
 
 
 
@@ -51,10 +46,10 @@ class PortfolioParallax extends React.Component {
             </ParallaxLayer>
 
             <ParallaxLayer 
-            offset={2} 
+            offset={0} 
             speed={0.5}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span>Walsh</span>
+                <SpringTitle />
             </ParallaxLayer>
             
         </Parallax>

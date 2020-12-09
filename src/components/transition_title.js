@@ -1,10 +1,7 @@
 import React from "react";
 import {Transition} from 'react-spring/renderprops'
 
-var toggle = [
-    {props: 'Louis Walsh'},
-    {props: 'Software Developer'}
-  ]; 
+var toggle = []; 
 
 class TransitionTitle extends React.Component {
     render() {
@@ -16,8 +13,8 @@ class TransitionTitle extends React.Component {
                 leave={{ opacity: 0 }}>
                 {toggle =>
                     toggle
-                    ? props => <div style={props}>Louis Walsh</div>
-                    : props => <div style={props}>Software Engineer</div>
+                    ? props => <div>Louis Walsh</div>
+                    : props => <div>Software Engineer</div>
                 }
                 </Transition>
 
