@@ -12,11 +12,6 @@ const Hobbies = () => {
         </li>
         <li>
           <h3>
-            I teach piano every Wendesday
-          </h3>
-        </li>
-        <li>
-          <h3>
             I play the music as well as Stevie Nicks
           </h3>
         </li>
