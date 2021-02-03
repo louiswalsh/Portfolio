@@ -35,24 +35,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
-  font-weight: 800;
-  font-size: 25em;
-  will-change: transform, opacity;
-  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
-}
-
-.simple-trans-main > div > firstPage {
-  cursor: pointer;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-  font-weight: 800;
-  font-size: 25em;
+  color: white;
+  font-weight: 5;
+  font-size: 1em;
   will-change: transform, opacity;
   text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
 }
