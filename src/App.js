@@ -9,11 +9,11 @@ import Landing from './components/pages/Landing'
 
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: '#9F792C' }}>
+  ({ style }) => <animated.div style={{ ...style, background: 'linear-gradient(to bottom right, #bdc3c7, #2c3e50)' }}>
     <Landing />
   </animated.div>,
 
-  ({ style }) => <animated.div style={{ ...style, background:  '#006778' }}>
+  ({ style }) => <animated.div style={{ ...style, background:  'linear-gradient(to bottom right, #000428 , #004e92)' }}>
     <Experience />
   </animated.div>,
 
